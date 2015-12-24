@@ -30,7 +30,7 @@ static UINavigationController *downNavCtl = nil;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _menuArray = [NSMutableArray arrayWithObjects:@"下载", @"收藏", @"我的", @"设置", nil];
+    _menuArray = [NSMutableArray arrayWithObjects:@"下载", nil];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(onDownloadFinished:) name:@"FINISHED" object:nil];
